@@ -20,7 +20,10 @@ let mes = document.querySelector("#mes");
 
 submit.addEventListener("click", function(){
 
-    if( Yname.value == ''){
+    if( Yname.value == '' && Pname.value == ''){
+        document.querySelector("#alert").style.transform='scale(1)';
+        alert_mes.innerText="Please Your Name & Your Partner Name";
+    }else if( Yname.value == ''){        
         document.querySelector("#alert").style.transform='scale(1)';
         alert_mes.innerText="Please Enter Your Name";
     }else if( Pname.value == ''){        
