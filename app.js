@@ -35,9 +35,6 @@ submit.addEventListener("click", function(){
         Yname.value='';
         Pname.value='';
     }
-
-    
-
 })
 
 clear.addEventListener("click", function(){
