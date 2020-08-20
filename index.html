@@ -9,24 +9,21 @@
 </head>
 <body>
  
-
-    <div id="main">
-        <input type="text" id="Yname" placeholder="Your Name">
-        <input type="text" id="Pname" placeholder="Your Partner Name">
-        <input type="submit" id="submit" value="Get Result"> 
-        <input type="submit" id="clear" value="Clear all"> 
+    <div id="main">  
+        <form id="form">
+            <input type="text" id="Yname" placeholder="Your Name">
+            <input type="text" id="Pname" placeholder="Your Partner Name">
+            <input type="submit" id="submit" value="Get Result"> 
+            <input type="submit" id="clear" value="Clear all"> 
+            <img src="files/loading.gif" alt="" id="loading">
+        </form>
     </div>
     
     <div id="result">
-        <a href="https://love-percentage.netlify.app/" id="remove">&times;</a>
+        <a id="remove">&times;</a>
         <span id="cong"> </span>
         <br>
         <span id="mes"> </span>
-    </div>
-
-    <div id="alert">
-        <span id="alt-remove">&times;</span>
-        <p id="alt">Wrong!</p>
     </div>
 
     <div id="social"> 
@@ -38,6 +35,6 @@
         </ul>
     </div>
  
-    <script src="app.js"></script>
+    <script src="app.js"></script> 
 </body>
 </html>

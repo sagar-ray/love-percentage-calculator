@@ -1,3 +1,11 @@
+#loading{
+    position: absolute;
+    top:50px;
+    left:0;
+    right:0;
+    margin: auto; 
+    transition: all 0.4s;
+}
 body{
     position: relative; 
     background: linear-gradient( to right , #2f00ffe7, #2600ff73 ), url('bg.jpg');
@@ -31,9 +39,19 @@ input[type='submit']{
 } 
 input#clear{
     float:right !important;
+    background:#52527c; 
+    border:2px solid #52527c;
 }
 input[type='submit']:hover{
     background:#4a4adb;
+}
+input#clear:hover{
+    background: #222222 ;  
+    border: 2px solid #4a4adb ;  
+}
+input#clear:focus{
+    background: #4a4adb ;   
+    border: 2px solid #4a4adb ;  
 }
 
 #main{
@@ -60,9 +78,12 @@ input[type='submit']:hover{
     font-family:arial;
     font-weight:normal;
     text-align: center;
-    position: relative;
-    transform: scale(0);
+    position: relative; 
     transition:all 0.8s;
+}
+
+#result, #loading{
+    transform:scale(0);
 }
 
 #cong, #mes{
@@ -105,8 +126,8 @@ input[type='submit']:hover{
 }
 
 #alert{
-    background: darkred;
-    color:#222;
+    background: #111;
+    color:#999;
     position:absolute;
     left:0%;
     right:0%;
@@ -116,25 +137,12 @@ input[type='submit']:hover{
     padding:15px;
     border-radius:10px;
     top:20px;
+    font-family:tahoma;
     z-index: 99;
     text-align: center;
-    transition:all 0.4s;
-    transform: scale(0);
-    font-size:14px;
-    box-shadow:0px 0px 15px 0px red;
-}
-#alt{
-    color:#666;
-}
-
-#alt-remove{
-    position:absolute;
-    right:8px;
-    font-size:30px;
-    top:0px;
-    color:#888;
-    cursor:pointer;
-}
+    transition:all 0.4s; 
+    font-size:14px; 
+} 
 
 /*
 Responsive Design
